@@ -3,11 +3,5 @@
   "outputDirectory": ".next",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_BACKEND_URL": {
-      "description": "Backend API URL (Hugging Face Space URL)",
-      "value": ""
-    }
-  }
+  "framework": "nextjs"
 }
