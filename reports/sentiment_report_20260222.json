@@ -1,0 +1,23 @@
+{
+  "report_date": "2026-02-22T19:30:12.201594",
+  "period_start": "2026-02-22T00:00:00",
+  "period_end": "2026-02-23T00:00:00",
+  "metrics": {
+    "total_messages": 0,
+    "positive_interactions": 0,
+    "neutral_interactions": 0,
+    "negative_interactions": 0,
+    "average_sentiment_score": 0.0,
+    "total_conversations": 0,
+    "escalations": 0,
+    "positive_ratio": 0,
+    "negative_ratio": 0,
+    "escalation_rate": 0
+  },
+  "channel_breakdown": {},
+  "top_negative_topics": [],
+  "trend_comparison": {
+    "message_volume_change": -100.0,
+    "sentiment_trend": 0.0
+  }
+}

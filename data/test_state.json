@@ -1,0 +1,110 @@
+{
+  "customers": {
+    "sarah.johnson@techstartup.io": {
+      "customer_id": "sarah.johnson@techstartup.io",
+      "primary_email": "sarah.johnson@techstartup.io",
+      "phone_number": null,
+      "name": "Sarah Johnson",
+      "company": "",
+      "plan_type": "free",
+      "total_conversations": 0,
+      "total_messages": 6,
+      "average_sentiment": 0.19444444444444442,
+      "escalation_count": 1,
+      "last_contact_date": "2026-02-17T23:46:38.733730",
+      "contact_channels": [
+        "email"
+      ]
+    }
+  },
+  "conversations": {
+    "conv_sarah.johnson@techstartup.io_0": {
+      "conversation_id": "conv_sarah.johnson@techstartup.io_0",
+      "customer_id": "sarah.johnson@techstartup.io",
+      "channel": "email",
+      "status": "escalated",
+      "created_at": "2026-02-17T23:46:38.732735",
+      "updated_at": "2026-02-17T23:46:38.733730",
+      "subject": "Slack integration issue",
+      "messages": [
+        {
+          "message_id": "msg_conv_sarah.johnson@techstartup.io_0_0",
+          "timestamp": "2026-02-17T23:46:38.733730",
+          "channel": "email",
+          "sender": "customer",
+          "content": "Hi, my Slack integration isn't working. This is frustrating.",
+          "sentiment": 0.0
+        },
+        {
+          "message_id": "msg_conv_sarah.johnson@techstartup.io_0_1",
+          "timestamp": "2026-02-17T23:46:38.733730",
+          "channel": "email",
+          "sender": "agent",
+          "content": "Hi Sarah, I'd be happy to help you troubleshoot the Slack integration.",
+          "sentiment": 0.5
+        },
+        {
+          "message_id": "msg_conv_sarah.johnson@techstartup.io_0_2",
+          "timestamp": "2026-02-17T23:46:38.733730",
+          "channel": "email",
+          "sender": "customer",
+          "content": "Thanks! I've tried reconnecting but still no notifications.",
+          "sentiment": 0.6666666666666666
+        },
+        {
+          "message_id": "msg_conv_sarah.johnson@techstartup.io_0_3",
+          "timestamp": "2026-02-17T23:46:38.733730",
+          "channel": "email",
+          "sender": "agent",
+          "content": "Let me check your settings. Can you verify the webhook URL?",
+          "sentiment": 0.0
+        },
+        {
+          "message_id": "msg_conv_sarah.johnson@techstartup.io_0_4",
+          "timestamp": "2026-02-17T23:46:38.733730",
+          "channel": "email",
+          "sender": "customer",
+          "content": "Yes, it's configured correctly. Still not working.",
+          "sentiment": 0.0
+        }
+      ],
+      "sentiment_history": [
+        0.0,
+        0.5,
+        0.6666666666666666,
+        0.0,
+        0.0
+      ],
+      "topics": [],
+      "escalated": true,
+      "escalation_reason": "Technical issue requiring engineering team",
+      "resolution_notes": ""
+    },
+    "conv_sarah.johnson@techstartup.io_1": {
+      "conversation_id": "conv_sarah.johnson@techstartup.io_1",
+      "customer_id": "sarah.johnson@techstartup.io",
+      "channel": "whatsapp",
+      "status": "open",
+      "created_at": "2026-02-17T23:46:38.733730",
+      "updated_at": "2026-02-17T23:46:38.733730",
+      "subject": "",
+      "messages": [
+        {
+          "message_id": "msg_conv_sarah.johnson@techstartup.io_1_0",
+          "timestamp": "2026-02-17T23:46:38.733730",
+          "channel": "whatsapp",
+          "sender": "customer",
+          "content": "Hey, still waiting on that Slack fix!",
+          "sentiment": 0.0
+        }
+      ],
+      "sentiment_history": [
+        0.0
+      ],
+      "topics": [],
+      "escalated": false,
+      "escalation_reason": "",
+      "resolution_notes": ""
+    }
+  }
+}

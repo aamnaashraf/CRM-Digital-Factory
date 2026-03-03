@@ -1,0 +1,57 @@
+{
+  "customers": {
+    "test.user@example.com": {
+      "customer_id": "test.user@example.com",
+      "primary_email": "test.user@example.com",
+      "phone_number": null,
+      "name": "",
+      "company": "",
+      "plan_type": "free",
+      "total_conversations": 0,
+      "total_messages": 2,
+      "average_sentiment": -0.125,
+      "escalation_count": 1,
+      "last_contact_date": "2026-02-17T23:48:22.453206",
+      "contact_channels": [
+        "email"
+      ]
+    }
+  },
+  "conversations": {
+    "conv_test.user@example.com_0": {
+      "conversation_id": "conv_test.user@example.com_0",
+      "customer_id": "test.user@example.com",
+      "channel": "email",
+      "status": "escalated",
+      "created_at": "2026-02-17T23:48:22.445208",
+      "updated_at": "2026-02-17T23:48:22.453206",
+      "subject": "Slack integration not working",
+      "messages": [
+        {
+          "message_id": "msg_conv_test.user@example.com_0_0",
+          "timestamp": "2026-02-17T23:48:22.445208",
+          "channel": "email",
+          "sender": "customer",
+          "content": "I connected Slack but notifications are not coming through. Very frustrated!",
+          "sentiment": -0.75
+        },
+        {
+          "message_id": "msg_conv_test.user@example.com_0_1",
+          "timestamp": "2026-02-17T23:48:22.453206",
+          "channel": "email",
+          "sender": "agent",
+          "content": "Thank you for your patience. Our engineering team is investigating the Slack integration issue.",
+          "sentiment": 0.5
+        }
+      ],
+      "sentiment_history": [
+        -0.75,
+        0.5
+      ],
+      "topics": [],
+      "escalated": true,
+      "escalation_reason": "technical: Customer frustrated, integration issue requires engineering review",
+      "resolution_notes": ""
+    }
+  }
+}

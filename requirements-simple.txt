@@ -1,0 +1,40 @@
+# Simplified Requirements for Local Development
+# TaskFlow AI Customer Success Agent (without Docker services)
+
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Database (with SQLite support)
+sqlalchemy==2.0.25
+aiosqlite==0.19.0  # For async SQLite support
+alembic==1.13.1
+
+# OpenAI
+openai==1.12.0
+
+# Utilities
+python-dotenv==1.0.0
+httpx==0.26.0
+tenacity==8.2.3
+python-multipart==0.0.6
+
+# Google APIs
+google-auth==2.28.0
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+google-api-python-client==2.116.0
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+pytest-cov==4.1.0
+httpx==0.26.0
+faker==22.6.0
+
+# Development
+black==24.1.1
+ruff==0.1.14
+mypy==1.8.0

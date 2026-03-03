@@ -1,0 +1,45 @@
+{
+  "report_date": "2026-02-23T19:30:12.098755",
+  "period_start": "2026-02-23T00:00:00",
+  "period_end": "2026-02-24T00:00:00",
+  "metrics": {
+    "total_messages": 249,
+    "positive_interactions": 1,
+    "neutral_interactions": 247,
+    "negative_interactions": 1,
+    "average_sentiment_score": -0.003,
+    "total_conversations": 250,
+    "escalations": 8,
+    "positive_ratio": 0.4,
+    "negative_ratio": 0.4,
+    "escalation_rate": 3.2
+  },
+  "channel_breakdown": {
+    "email": {
+      "positive": 0,
+      "neutral": 241,
+      "negative": 1
+    },
+    "whatsapp": {
+      "positive": 1,
+      "neutral": 5,
+      "negative": 0
+    },
+    "web": {
+      "positive": 0,
+      "neutral": 1,
+      "negative": 0
+    }
+  },
+  "top_negative_topics": [
+    "I just requested to connect",
+    "I just requested to connect",
+    "See Nazeen’s and other people’s connections, exper...",
+    "Numrah Zaid recently posted: Hiring Alert!\n\nJob Ti...",
+    "the citizens foundation may want to hire you"
+  ],
+  "trend_comparison": {
+    "message_volume_change": 0,
+    "sentiment_trend": 0
+  }
+}
