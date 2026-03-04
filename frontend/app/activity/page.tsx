@@ -53,19 +53,19 @@ export default function ActivityPage() {
       <div className="absolute top-20 left-10 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
-      <div className="relative z-10 p-8">
+      <div className="relative z-10 p-4 sm:p-6 md:p-8">
         {/* Header */}
-        <div className="mb-10 text-center">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">
+        <div className="mb-6 sm:mb-8 md:mb-10 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-3 sm:mb-4">
             Activity Feed
           </h1>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto px-4">
             Track all customer interactions and support requests in real-time
           </p>
         </div>
 
         {/* Filter Controls */}
-        <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mb-6 sm:mb-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 px-2">
           {[
             { key: 'all', label: 'All Activity', icon: ActivityIcon },
             { key: 'open', label: 'Open', icon: MessageSquare },
@@ -78,7 +78,7 @@ export default function ActivityPage() {
             <button
               key={key}
               onClick={() => setFilter(key)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-200 ${
+              className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border transition-all duration-200 text-xs sm:text-sm ${
                 filter === key
                   ? color === 'green' ? 'bg-green-500/20 border-green-500/50 text-green-400' :
                     color === 'orange' ? 'bg-orange-500/20 border-orange-500/50 text-orange-400' :
@@ -88,58 +88,58 @@ export default function ActivityPage() {
                   : 'bg-slate-800/50 border-slate-600 text-slate-400 hover:border-slate-500'
               }`}
             >
-              <Icon className="w-4 h-4" />
-              {label}
+              <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span className="whitespace-nowrap">{label}</span>
             </button>
           ))}
         </div>
 
         {/* Stats Summary */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-4 border border-slate-700">
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-full bg-blue-500/20 border border-blue-500/30">
-                <ActivityIcon className="w-5 h-5 text-blue-400" />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8 px-2">
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-3 sm:p-4 border border-slate-700">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="p-1.5 sm:p-2 rounded-full bg-blue-500/20 border border-blue-500/30">
+                <ActivityIcon className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
               </div>
               <div>
-                <p className="text-2xl font-bold text-slate-200">{activities.length}</p>
+                <p className="text-xl sm:text-2xl font-bold text-slate-200">{activities.length}</p>
                 <p className="text-xs text-slate-500">Total</p>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-4 border border-slate-700">
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-full bg-orange-500/20 border border-orange-500/30">
-                <MessageSquare className="w-5 h-5 text-orange-400" />
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-3 sm:p-4 border border-slate-700">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="p-1.5 sm:p-2 rounded-full bg-orange-500/20 border border-orange-500/30">
+                <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-orange-400" />
               </div>
               <div>
-                <p className="text-2xl font-bold text-slate-200">
+                <p className="text-xl sm:text-2xl font-bold text-slate-200">
                   {activities.filter(a => a.status === 'open').length}
                 </p>
                 <p className="text-xs text-slate-500">Open</p>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-4 border border-slate-700">
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-full bg-green-500/20 border border-green-500/30">
-                <MessageSquare className="w-5 h-5 text-green-400" />
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-3 sm:p-4 border border-slate-700">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="p-1.5 sm:p-2 rounded-full bg-green-500/20 border border-green-500/30">
+                <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-green-400" />
               </div>
               <div>
-                <p className="text-2xl font-bold text-slate-200">
+                <p className="text-xl sm:text-2xl font-bold text-slate-200">
                   {activities.filter(a => a.status === 'resolved').length}
                 </p>
                 <p className="text-xs text-slate-500">Resolved</p>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-4 border border-slate-700">
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-full bg-red-500/20 border border-red-500/30">
-                <MessageSquare className="w-5 h-5 text-red-400" />
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-3 sm:p-4 border border-slate-700">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="p-1.5 sm:p-2 rounded-full bg-red-500/20 border border-red-500/30">
+                <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-red-400" />
               </div>
               <div>
-                <p className="text-2xl font-bold text-slate-200">
+                <p className="text-xl sm:text-2xl font-bold text-slate-200">
                   {activities.filter(a => a.status === 'escalated').length}
                 </p>
                 <p className="text-xs text-slate-500">Escalated</p>
@@ -149,7 +149,7 @@ export default function ActivityPage() {
         </div>
 
         {/* Activity List */}
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-2">
           <RecentActivity activities={filteredActivities} loading={loading} />
         </div>
 
