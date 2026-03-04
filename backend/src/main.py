@@ -125,9 +125,22 @@ app = FastAPI(
 
 
 # Middleware
+# Allow frontend origins
+allowed_origins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://frontend-rust-gamma-56.vercel.app",
+    "https://frontend-lt98wd90v-aamna-ashraf-rajputs-projects.vercel.app",
+    "https://frontend-ky8woqwrh-aamna-ashraf-rajputs-projects.vercel.app",
+]
+
+# In development, allow all origins
+if settings.is_development:
+    allowed_origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"] if settings.is_development else ["https://taskflow.com"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
