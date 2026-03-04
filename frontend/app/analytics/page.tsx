@@ -156,7 +156,7 @@ export default function AnalyticsPage() {
                   Ticket Volume Trend
                 </h3>
               </div>
-              <div className="h-48 sm:h-56 md:h-64 flex items-center justify-center border border-slate-700 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-2 sm:p-3 md:p-4">
+              <div className="h-64 sm:h-72 md:h-80 flex items-center justify-center border border-slate-700 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-2 sm:p-3 md:p-4">
                 {loading ? (
                   <div className="text-center">
                     <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto mb-3"></div>
@@ -172,16 +172,16 @@ export default function AnalyticsPage() {
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart
                       data={analyticsData.ticketVolume}
-                      margin={{ top: 20, right: 30, left: 20, bottom: 30 }}
+                      margin={{ top: 10, right: 10, left: 0, bottom: 20 }}
                     >
                       <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
                       <XAxis
                         dataKey="date"
-                        tick={{ fill: '#9CA3AF', fontSize: 12 }}
+                        tick={{ fill: '#9CA3AF', fontSize: 10 }}
                         tickFormatter={(value) => new Date(value).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                       />
                       <YAxis
-                        tick={{ fill: '#9CA3AF', fontSize: 12 }}
+                        tick={{ fill: '#9CA3AF', fontSize: 10 }}
                         tickCount={5}
                       />
                       <Tooltip
@@ -235,7 +235,7 @@ export default function AnalyticsPage() {
                   Channel Distribution
                 </h3>
               </div>
-              <div className="h-48 sm:h-56 md:h-64 flex items-center justify-center border border-slate-700 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-2 sm:p-3 md:p-4">
+              <div className="h-64 sm:h-72 md:h-80 flex items-center justify-center border border-slate-700 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-2 sm:p-3 md:p-4">
                 {loading ? (
                   <div className="text-center">
                     <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-500 mx-auto mb-3"></div>
@@ -258,11 +258,11 @@ export default function AnalyticsPage() {
                         ]}
                         cx="50%"
                         cy="50%"
-                        labelLine={true}
-                        outerRadius={80}
+                        labelLine={false}
+                        outerRadius="60%"
                         fill="#8884d8"
                         dataKey="value"
-                        label={({ name, percent = 0 }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                        label={({ percent = 0 }) => percent > 0 ? `${(percent * 100).toFixed(0)}%` : ''}
                       >
                         <Cell fill="#0ea5e9" />
                         <Cell fill="#10b981" />
@@ -277,7 +277,10 @@ export default function AnalyticsPage() {
                         }}
                         formatter={(value) => [value, 'Tickets']}
                       />
-                      <Legend />
+                      <Legend
+                        wrapperStyle={{ fontSize: '12px' }}
+                        iconType="circle"
+                      />
                     </PieChart>
                   </ResponsiveContainer>
                 )}
