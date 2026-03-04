@@ -56,107 +56,107 @@ export default function AnalyticsPage() {
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
 
-      <div className="relative z-10 p-8">
+      <div className="relative z-10 p-4 sm:p-6 md:p-8">
         {/* Header */}
-        <div className="mb-12 text-center">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent mb-4">
+        <div className="mb-6 sm:mb-8 md:mb-12 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent mb-3 sm:mb-4 px-4">
             TaskFlow AI Digital FTE Analytics
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-slate-400 max-w-2xl mx-auto px-4">
             24/7 AI Customer Success Performance & Business Impact Metrics
           </p>
         </div>
 
         {/* Key Metrics */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 p-6 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8 md:mb-12 px-2">
+          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl sm:rounded-2xl border border-slate-700 p-4 sm:p-5 md:p-6 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-cyan-500/10 group-hover:scale-150 group-hover:opacity-20 transition-all duration-1000"></div>
             <div className="relative z-10">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 rounded-full bg-cyan-500/20 backdrop-blur-sm border border-cyan-500/30">
-                  <BarChart3 className="w-6 h-6 text-cyan-400" />
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <div className="p-2 sm:p-3 rounded-full bg-cyan-500/20 backdrop-blur-sm border border-cyan-500/30">
+                  <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-400" />
                 </div>
-                <span className="text-xs text-cyan-400 bg-cyan-500/20 px-3 py-1 rounded-full font-medium border border-cyan-500/30">
+                <span className="text-xs text-cyan-400 bg-cyan-500/20 px-2 sm:px-3 py-1 rounded-full font-medium border border-cyan-500/30">
                   +12%
                 </span>
               </div>
-              <p className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-2">
+              <p className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent mb-1 sm:mb-2">
                 {totalConversations.toLocaleString()}
               </p>
-              <p className="text-sm text-slate-400">Total Conversations</p>
+              <p className="text-xs sm:text-sm text-slate-400">Total Conversations</p>
             </div>
           </div>
 
-          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 p-6 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
+          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl sm:rounded-2xl border border-slate-700 p-4 sm:p-5 md:p-6 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-green-500/10 group-hover:scale-150 group-hover:opacity-20 transition-all duration-1000"></div>
             <div className="relative z-10">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 rounded-full bg-green-500/20 backdrop-blur-sm border border-green-500/30">
-                  <TrendingUp className="w-6 h-6 text-green-400" />
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <div className="p-2 sm:p-3 rounded-full bg-green-500/20 backdrop-blur-sm border border-green-500/30">
+                  <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-green-400" />
                 </div>
-                <span className="text-xs text-green-400 bg-green-500/20 px-3 py-1 rounded-full font-medium border border-green-500/30">
+                <span className="text-xs text-green-400 bg-green-500/20 px-2 sm:px-3 py-1 rounded-full font-medium border border-green-500/30">
                   +5%
                 </span>
               </div>
-              <p className="text-3xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-2">
+              <p className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-1 sm:mb-2">
                 {csatScore}
               </p>
-              <p className="text-sm text-slate-400">CSAT Score</p>
+              <p className="text-xs sm:text-sm text-slate-400">CSAT Score</p>
             </div>
           </div>
 
-          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 p-6 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
+          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl sm:rounded-2xl border border-slate-700 p-4 sm:p-5 md:p-6 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-orange-500/10 group-hover:scale-150 group-hover:opacity-20 transition-all duration-1000"></div>
             <div className="relative z-10">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 rounded-full bg-orange-500/20 backdrop-blur-sm border border-orange-500/30">
-                  <Clock className="w-6 h-6 text-orange-400" />
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <div className="p-2 sm:p-3 rounded-full bg-orange-500/20 backdrop-blur-sm border border-orange-500/30">
+                  <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400" />
                 </div>
-                <span className="text-xs text-emerald-400 bg-emerald-500/20 px-3 py-1 rounded-full font-medium border border-emerald-500/30">
+                <span className="text-xs text-emerald-400 bg-emerald-500/20 px-2 sm:px-3 py-1 rounded-full font-medium border border-emerald-500/30">
                   -8%
                 </span>
               </div>
-              <p className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent mb-2">
+              <p className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent mb-1 sm:mb-2">
                 {avgResponseTime}
               </p>
-              <p className="text-sm text-slate-400">Avg Response Time</p>
+              <p className="text-xs sm:text-sm text-slate-400">Avg Response Time</p>
             </div>
           </div>
 
-          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 p-6 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
+          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl sm:rounded-2xl border border-slate-700 p-4 sm:p-5 md:p-6 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
             <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-purple-500/10 group-hover:scale-150 group-hover:opacity-20 transition-all duration-1000"></div>
             <div className="relative z-10">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 rounded-full bg-purple-500/20 backdrop-blur-sm border border-purple-500/30">
-                  <Target className="w-6 h-6 text-purple-400" />
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
+                <div className="p-2 sm:p-3 rounded-full bg-purple-500/20 backdrop-blur-sm border border-purple-500/30">
+                  <Target className="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" />
                 </div>
-                <span className="text-xs text-purple-400 bg-purple-500/20 px-3 py-1 rounded-full font-medium border border-purple-500/30">
+                <span className="text-xs text-purple-400 bg-purple-500/20 px-2 sm:px-3 py-1 rounded-full font-medium border border-purple-500/30">
                   +3%
                 </span>
               </div>
-              <p className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
+              <p className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-1 sm:mb-2">
                 {resolutionRate.toFixed(0)}%
               </p>
-              <p className="text-sm text-slate-400">Resolution Rate</p>
+              <p className="text-xs sm:text-sm text-slate-400">Resolution Rate</p>
             </div>
           </div>
         </div>
 
         {/* Charts Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8 md:mb-12 px-2">
           {/* Ticket Volume Trend */}
-          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 p-6 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl sm:rounded-2xl border border-slate-700 p-4 sm:p-5 md:p-6 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
             <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-blue-500/10 group-hover:scale-150 group-hover:opacity-20 transition-all duration-1000"></div>
             <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 rounded-full bg-blue-500/20 backdrop-blur-sm border border-blue-500/30">
-                  <BarChart3 className="w-5 h-5 text-blue-400" />
+              <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                <div className="p-1.5 sm:p-2 rounded-full bg-blue-500/20 backdrop-blur-sm border border-blue-500/30">
+                  <BarChart3 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold bg-gradient-to-r from-slate-100 to-slate-300 bg-clip-text text-transparent">
+                <h3 className="text-base sm:text-lg md:text-xl font-bold bg-gradient-to-r from-slate-100 to-slate-300 bg-clip-text text-transparent">
                   Ticket Volume Trend
                 </h3>
               </div>
-              <div className="h-64 flex items-center justify-center border border-slate-700 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-4">
+              <div className="h-48 sm:h-56 md:h-64 flex items-center justify-center border border-slate-700 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-2 sm:p-3 md:p-4">
                 {loading ? (
                   <div className="text-center">
                     <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto mb-3"></div>
@@ -224,18 +224,18 @@ export default function AnalyticsPage() {
           </div>
 
           {/* Channel Distribution */}
-          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 p-6 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl sm:rounded-2xl border border-slate-700 p-4 sm:p-5 md:p-6 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
             <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-pink-500/10 group-hover:scale-150 group-hover:opacity-20 transition-all duration-1000"></div>
             <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 rounded-full bg-pink-500/20 backdrop-blur-sm border border-pink-500/30">
-                  <MessageSquare className="w-5 h-5 text-pink-400" />
+              <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                <div className="p-1.5 sm:p-2 rounded-full bg-pink-500/20 backdrop-blur-sm border border-pink-500/30">
+                  <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-pink-400" />
                 </div>
-                <h3 className="text-xl font-bold bg-gradient-to-r from-slate-100 to-slate-300 bg-clip-text text-transparent">
+                <h3 className="text-base sm:text-lg md:text-xl font-bold bg-gradient-to-r from-slate-100 to-slate-300 bg-clip-text text-transparent">
                   Channel Distribution
                 </h3>
               </div>
-              <div className="h-64 flex items-center justify-center border border-slate-700 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-4">
+              <div className="h-48 sm:h-56 md:h-64 flex items-center justify-center border border-slate-700 rounded-xl bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-2 sm:p-3 md:p-4">
                 {loading ? (
                   <div className="text-center">
                     <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-500 mx-auto mb-3"></div>
@@ -287,16 +287,16 @@ export default function AnalyticsPage() {
         </div>
 
         {/* Channel Performance */}
-        <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 p-6">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 backdrop-blur-sm border border-indigo-500/30">
-              <MessageSquare className="w-5 h-5 text-indigo-400" />
+        <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl sm:rounded-2xl border border-slate-700 p-4 sm:p-5 md:p-6 mx-2">
+          <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+            <div className="p-1.5 sm:p-2 rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 backdrop-blur-sm border border-indigo-500/30">
+              <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-400" />
             </div>
-            <h3 className="text-xl font-bold bg-gradient-to-r from-slate-100 to-slate-300 bg-clip-text text-transparent">
+            <h3 className="text-base sm:text-lg md:text-xl font-bold bg-gradient-to-r from-slate-100 to-slate-300 bg-clip-text text-transparent">
               Channel Performance
             </h3>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {['email', 'whatsapp', 'web'].map((channel, index) => {
               const count = channelData[channel] || 0;
               const colors = [
@@ -314,20 +314,20 @@ export default function AnalyticsPage() {
                 return (
                   <div
                     key={channel}
-                    className="group flex items-center justify-between p-5 rounded-xl bg-slate-800/30 border border-slate-700 opacity-70"
+                    className="group flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0 p-3 sm:p-4 md:p-5 rounded-xl bg-slate-800/30 border border-slate-700 opacity-70"
                   >
-                    <div className="flex items-center gap-4">
-                      <div className="p-3 rounded-full bg-gradient-to-br from-slate-600/20 to-slate-500/20 backdrop-blur-sm border-2 border-slate-700">
-                        <MessageSquare className="w-6 h-6 text-slate-500" />
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="p-2 sm:p-3 rounded-full bg-gradient-to-br from-slate-600/20 to-slate-500/20 backdrop-blur-sm border-2 border-slate-700">
+                        <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-slate-500" />
                       </div>
                       <div>
-                        <p className="text-slate-500 font-semibold text-lg capitalize">{channel}</p>
-                        <p className="text-sm text-slate-600">No tickets yet</p>
+                        <p className="text-slate-500 font-semibold text-base sm:text-lg capitalize">{channel}</p>
+                        <p className="text-xs sm:text-sm text-slate-600">No tickets yet</p>
                       </div>
                     </div>
-                    <div className="text-right">
-                      <p className="text-slate-500 font-bold text-lg">-</p>
-                      <p className="text-sm text-slate-600 font-medium">Avg response</p>
+                    <div className="text-left sm:text-right ml-11 sm:ml-0">
+                      <p className="text-slate-500 font-bold text-base sm:text-lg">-</p>
+                      <p className="text-xs sm:text-sm text-slate-600 font-medium">Avg response</p>
                     </div>
                   </div>
                 );
@@ -335,20 +335,20 @@ export default function AnalyticsPage() {
                 return (
                   <div
                     key={channel}
-                    className="group flex items-center justify-between p-5 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-cyan-500/30 hover:bg-slate-800/70 transition-all duration-300"
+                    className="group flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0 p-3 sm:p-4 md:p-5 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-cyan-500/30 hover:bg-slate-800/70 transition-all duration-300"
                   >
-                    <div className="flex items-center gap-4">
-                      <div className={`p-3 rounded-full bg-gradient-to-br ${color} backdrop-blur-sm border-2 border-slate-600 group-hover:scale-110 transition-transform duration-300`}>
-                        <MessageSquare className="w-6 h-6 text-slate-300" />
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className={`p-2 sm:p-3 rounded-full bg-gradient-to-br ${color} backdrop-blur-sm border-2 border-slate-600 group-hover:scale-110 transition-transform duration-300`}>
+                        <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-slate-300" />
                       </div>
                       <div>
-                        <p className="text-slate-200 font-semibold text-lg capitalize">{channel}</p>
-                        <p className="text-sm text-slate-500">{count} tickets processed</p>
+                        <p className="text-slate-200 font-semibold text-base sm:text-lg capitalize">{channel}</p>
+                        <p className="text-xs sm:text-sm text-slate-500">{count} tickets processed</p>
                       </div>
                     </div>
-                    <div className="text-right">
-                      <p className="text-slate-200 font-bold text-lg">{responseTime}</p>
-                      <p className="text-sm text-slate-400 font-medium">Avg response</p>
+                    <div className="text-left sm:text-right ml-11 sm:ml-0">
+                      <p className="text-slate-200 font-bold text-base sm:text-lg">{responseTime}</p>
+                      <p className="text-xs sm:text-sm text-slate-400 font-medium">Avg response</p>
                     </div>
                   </div>
                 );
