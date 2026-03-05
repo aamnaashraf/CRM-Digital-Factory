@@ -77,56 +77,56 @@ export default function SupportPage() {
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
 
-      <div className="relative z-10 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-3 mb-6 px-6 py-3 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 backdrop-blur-sm">
-              <div className="p-2 rounded-full bg-blue-500/30">
-                <CheckCircle className="w-5 h-5 text-blue-400" />
+          <div className="text-center mb-8 sm:mb-12">
+            <div className="inline-flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 backdrop-blur-sm">
+              <div className="p-1.5 sm:p-2 rounded-full bg-blue-500/30">
+                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
               </div>
-              <span className="text-blue-400 text-sm font-medium">AI-Powered Customer Support</span>
+              <span className="text-blue-400 text-xs sm:text-sm font-medium">AI-Powered Customer Support</span>
             </div>
 
-            <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4 sm:mb-6 px-4">
               Get Support Now
             </h1>
 
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed px-4">
               Connect with our AI-powered support team. We typically respond in under 3 seconds!
             </p>
           </div>
 
           {/* Form Card */}
-          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl border border-slate-700 p-8 hover:shadow-2xl hover:scale-[1.01] transition-all duration-300 relative overflow-hidden">
+          <div className="group bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl sm:rounded-3xl border border-slate-700 p-4 sm:p-6 lg:p-8 hover:shadow-2xl hover:scale-[1.01] transition-all duration-300 relative overflow-hidden">
             <div className="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-blue-500/10 group-hover:scale-150 group-hover:opacity-20 transition-all duration-1000"></div>
             <div className="absolute -bottom-20 -left-20 w-32 h-32 rounded-full bg-purple-500/10 group-hover:scale-150 group-hover:opacity-20 transition-all duration-1000"></div>
 
             <div className="relative z-10">
               {success ? (
-              <div className="py-6">
+              <div className="py-4 sm:py-6">
                 {/* Ticket Confirmation */}
-                <div className="text-center mb-8">
-                  <div className="relative p-6 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 border-2 border-green-500/30 mx-auto w-24 h-24 flex items-center justify-center mb-6">
+                <div className="text-center mb-6 sm:mb-8">
+                  <div className="relative p-4 sm:p-6 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 border-2 border-green-500/30 mx-auto w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mb-4 sm:mb-6">
                     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-green-500/10 to-emerald-500/10 animate-pulse"></div>
-                    <CheckCircle className="w-12 h-12 text-green-400 relative z-10" />
+                    <CheckCircle className="w-10 h-10 sm:w-12 sm:h-12 text-green-400 relative z-10" />
                   </div>
 
-                  <h2 className="text-3xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-3 sm:mb-4 px-4">
                     Request Submitted Successfully!
                   </h2>
 
-                  <p className="text-slate-300 mb-6 max-w-md mx-auto">Great! Your request has been received and is being processed by our AI assistant.</p>
+                  <p className="text-slate-300 text-sm sm:text-base mb-4 sm:mb-6 max-w-md mx-auto px-4">Great! Your request has been received and is being processed by our AI assistant.</p>
 
-                  <div className="mb-6 p-4 bg-slate-800/50 rounded-xl border border-slate-700 inline-block">
-                    <p className="text-slate-400 mb-2">Ticket ID</p>
-                    <div className="flex items-center gap-2 justify-center">
-                      <span className="font-mono text-lg font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
+                  <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-slate-800/50 rounded-xl border border-slate-700 inline-block mx-4">
+                    <p className="text-slate-400 mb-2 text-xs sm:text-sm">Ticket ID</p>
+                    <div className="flex items-center gap-2 justify-center flex-wrap">
+                      <span className="font-mono text-base sm:text-lg font-bold bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent break-all">
                         {ticketId}
                       </span>
                       <button
                         onClick={() => navigator.clipboard.writeText(ticketId)}
-                        className="text-slate-500 hover:text-slate-300 transition-colors text-sm"
+                        className="text-slate-500 hover:text-slate-300 transition-colors text-xs sm:text-sm whitespace-nowrap"
                         title="Copy ticket ID"
                       >
                         Copy
@@ -134,8 +134,8 @@ export default function SupportPage() {
                     </div>
                   </div>
 
-                  <div className="bg-slate-800/30 rounded-xl p-4 mb-6 inline-block">
-                    <div className="flex items-center gap-2 text-green-400 text-sm">
+                  <div className="bg-slate-800/30 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 inline-block mx-4">
+                    <div className="flex items-center gap-2 text-green-400 text-xs sm:text-sm">
                       <CheckCircle className="w-4 h-4" />
                       <span>AI Response Generated</span>
                     </div>
@@ -144,17 +144,17 @@ export default function SupportPage() {
 
                 {/* AI Response Section */}
                 {showAIResponse && aiResponse && (
-                  <div className="mb-8">
-                    <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-600 p-6 relative overflow-hidden">
+                  <div className="mb-6 sm:mb-8 px-4">
+                    <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl sm:rounded-2xl border border-slate-600 p-4 sm:p-6 relative overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                       <div className="relative z-10">
-                        <div className="flex items-center gap-3 mb-4">
-                          <div className="p-2 rounded-full bg-gradient-to-r from-blue-500/30 to-purple-500/30">
-                            <CheckCircle className="w-5 h-5 text-blue-400" />
+                        <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 flex-wrap">
+                          <div className="p-1.5 sm:p-2 rounded-full bg-gradient-to-r from-blue-500/30 to-purple-500/30">
+                            <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
                           </div>
-                          <h3 className="text-xl font-bold text-slate-200">
-                            AI Response
-                            <span className={`ml-2 px-2 py-1 rounded-full text-xs font-medium ${
+                          <h3 className="text-lg sm:text-xl font-bold text-slate-200 flex items-center gap-2 flex-wrap">
+                            <span>AI Response</span>
+                            <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                               responseStatus === 'resolved'
                                 ? 'bg-green-500/20 text-green-400 border border-green-500/30'
                                 : 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
@@ -165,7 +165,7 @@ export default function SupportPage() {
                         </div>
 
                         <div className="prose prose-invert max-w-none">
-                          <div className="text-slate-300 leading-relaxed whitespace-pre-wrap bg-slate-900/30 rounded-lg p-4 border border-slate-700/50">
+                          <div className="text-slate-300 text-sm sm:text-base leading-relaxed whitespace-pre-wrap break-words bg-slate-900/30 rounded-lg p-3 sm:p-4 border border-slate-700/50 overflow-x-auto">
                             {aiResponse}
                           </div>
                         </div>
@@ -174,18 +174,18 @@ export default function SupportPage() {
                   </div>
                 )}
 
-                <p className="text-slate-400 mb-8 text-lg max-w-lg mx-auto text-center">
+                <p className="text-slate-400 mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg max-w-lg mx-auto text-center px-4">
                   {showAIResponse
                     ? "An immediate response has been provided above. A copy has been sent to your email."
                     : "We're processing your request and will respond shortly."
                   }
                   <br />
-                  <span className="font-semibold text-amber-400">
+                  <span className="font-semibold text-amber-400 text-xs sm:text-sm lg:text-base">
                     Estimated response time: {showAIResponse ? "Response provided above" : "3 seconds"}
                   </span>
                 </p>
 
-                <div className="flex gap-4 justify-center">
+                <div className="flex gap-3 sm:gap-4 justify-center px-4">
                   <button
                     onClick={() => {
                       setSuccess(false);
@@ -194,7 +194,7 @@ export default function SupportPage() {
                       setAIResponse("");
                       setResponseStatus("");
                     }}
-                    className="bg-gradient-to-r from-slate-700 to-slate-600 text-slate-200 px-6 py-3 rounded-full font-semibold hover:from-slate-600 hover:to-slate-500 transition-all shadow-lg shadow-slate-500/20"
+                    className="bg-gradient-to-r from-slate-700 to-slate-600 text-slate-200 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full text-sm sm:text-base font-semibold hover:from-slate-600 hover:to-slate-500 transition-all shadow-lg shadow-slate-500/20"
                   >
                     Submit Another Request
                   </button>
@@ -361,20 +361,20 @@ export default function SupportPage() {
               )}
 
               {/* Beautiful Footer */}
-              <div className="mt-20 pt-12 border-t border-slate-700">
+              <div className="mt-12 sm:mt-16 lg:mt-20 pt-8 sm:pt-10 lg:pt-12 border-t border-slate-700">
                 <div className="text-center">
-                  <div className="inline-flex items-center gap-3 mb-6 px-6 py-3 rounded-full bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-600 hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300">
-                    <div className="p-2 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 hover:scale-110 transition-transform duration-300">
-                      <CheckCircle className="w-5 h-5 text-cyan-400" />
+                  <div className="inline-flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-600 hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300">
+                    <div className="p-1.5 sm:p-2 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 hover:scale-110 transition-transform duration-300">
+                      <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400" />
                     </div>
-                    <span className="text-slate-200 text-lg font-semibold hover:text-cyan-400 transition-colors">AI-Powered Customer Support</span>
+                    <span className="text-slate-200 text-sm sm:text-base lg:text-lg font-semibold hover:text-cyan-400 transition-colors">AI-Powered Customer Support</span>
                   </div>
 
-                  <p className="text-slate-400 text-sm max-w-2xl mx-auto mb-8 hover:text-slate-300 transition-colors">
+                  <p className="text-slate-400 text-xs sm:text-sm max-w-2xl mx-auto mb-6 sm:mb-8 hover:text-slate-300 transition-colors px-4">
                     Instant help with intelligent AI agents. Available 24/7 for immediate assistance.
                   </p>
 
-                  <div className="flex flex-wrap justify-center gap-8 text-xs text-slate-500 mb-8">
+                  <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 text-xs text-slate-500 mb-6 sm:mb-8 px-4">
                     <span className="hover:text-cyan-400 hover:scale-110 transition-all duration-300 cursor-pointer border-b border-transparent hover:border-cyan-400/50 pb-1">Instant Support</span>
                     <span className="hover:text-blue-400 hover:scale-110 transition-all duration-300 cursor-pointer border-b border-transparent hover:border-blue-400/50 pb-1">AI Agent</span>
                     <span className="hover:text-purple-400 hover:scale-110 transition-all duration-300 cursor-pointer border-b border-transparent hover:border-purple-400/50 pb-1">24/7 Availability</span>
@@ -382,11 +382,11 @@ export default function SupportPage() {
                     <span className="hover:text-amber-400 hover:scale-110 transition-all duration-300 cursor-pointer border-b border-transparent hover:border-amber-400/50 pb-1">Fast Resolution</span>
                   </div>
 
-                  <div className="border-t border-slate-700 pt-8">
-                    <p className="text-slate-500 text-sm hover:text-slate-400 transition-colors">
+                  <div className="border-t border-slate-700 pt-6 sm:pt-8">
+                    <p className="text-slate-500 text-xs sm:text-sm hover:text-slate-400 transition-colors px-4">
                       © 2026 TaskFlow AI Customer Support. Built for the CRM Digital FTE Factory Final Hackathon 5.
                     </p>
-                    <p className="text-slate-600 text-xs mt-2 hover:text-slate-500 transition-colors">
+                    <p className="text-slate-600 text-xs mt-2 hover:text-slate-500 transition-colors px-4">
                       Instant AI-powered assistance for all your needs.
                     </p>
                   </div>
